@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vilches Abogados - Agendar Cita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=85" alt="Agendar cita">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container page-hero-content">
+    <span class="hero-badge">Reserva Online</span>
+    <h1>Agende su <span class="text-accent">consulta</span></h1>
+  </div>
+</section>
+
+<section class="booking-section">
+  <div class="container">
+    <div class="booking-layout">
+      <div class="booking-form-container">
+        <div class="booking-card">
+          <h2>Datos de la consulta</h2>
+          <form id="bookingForm">
+            <div class="form-group">
+              <label>Abogado</label>
+              <select id="abogadoSelect" required>
+                <option value="">Seleccione un abogado</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" id="nombreInput" required>
+              </div>
+              <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" id="emailInput" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input type="tel" id="telInput" required>
+              </div>
+              <div class="form-group">
+                <label>Área de consulta</label>
+                <select id="areaSelect" required>
+                  <option value="">Seleccione</option>
+                  <option>Familia</option><option>Herencias</option><option>Civil</option><option>Penal</option><option>Inmobiliario</option><option>Segunda Oportunidad</option><option>Bancario</option><option>Reclamaciones</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Fecha</label>
+                <input type="date" id="fechaInput" required>
+              </div>
+              <div class="form-group">
+                <label>Horario</label>
+                <select id="horarioSelect" required>
+                  <option value="">Primero seleccione fecha</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Breve descripción del caso</label>
+              <textarea id="descripcionInput" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Confirmar Reserva</button>
+          </form>
+        </div>
+      </div>
+      <div class="booking-info">
+        <div class="info-card">
+          <h3><i class="fas fa-info-circle"></i> Información útil</h3>
+          <ul>
+            <li>Las consultas tienen una duración estimada de 45 minutos.</li>
+            <li>Recibirá un correo de confirmación con los detalles de la cita.</li>
+            <li>Puede cancelar o reagendar sin cargo hasta 24 hs antes.</li>
+            <li>Disponemos de cita presencial y videocita.</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3><i class="fas fa-clock"></i> Horarios de atención</h3>
+          <ul class="schedule-list">
+            <li><span>Lunes – Viernes</span><span>9:00 – 19:00</span></li>
+            <li><span>Sábados</span><span>Previa cita</span></li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3><i class="fas fa-phone-alt"></i> ¿Prefiere llamarnos?</h3>
+          <p>Contáctenos al <strong>91 091 79 65</strong> o envíe un correo a <strong>despacho@vilchesabogados.com</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<div class="modal-overlay" id="confirmModal">
+  <div class="modal">
+    <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+    <h3>Consulta agendada con éxito</h3>
+    <div id="modalDetails"></div>
+    <p class="modal-note">Recibirá un correo electrónico con los detalles de su cita.</p>
+    <button class="btn btn-primary" id="modalCloseBtn">Entendido</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
