@@ -1,44 +1,42 @@
-# Vilches Abogados â€” Web Corporativa
+﻿# Vilches Abogados - Web Corporativa
 
-## ðŸ“‹ DescripciÃ³n
+## Descripcion
 
-Sitio web corporativo completo para un bufete de abogados con sistema de gestiÃ³n de citas online. Los clientes pueden registrarse, iniciar sesiÃ³n, agendar consultas y gestionar sus citas. Incluye panel de administraciÃ³n y blog.
+Sitio web corporativo completo para un bufete de abogados con sistema de gestion de citas online. Los clientes pueden registrarse, iniciar sesion, agendar consultas y gestionar sus citas. Incluye panel de administracion y blog.
 
-## ðŸš€ Stack TecnolÃ³gico
+## Stack Tecnologico
 
-| Capa | TecnologÃ­a |
+| Capa | Tecnologia |
 |------|-----------|
 | **Frontend** | HTML5, CSS3, JavaScript |
 | **Backend** | Node.js + Express |
 | **Base de datos** | MySQL |
 | **Despliegue** | Vercel |
 
-## âœ¨ Funcionalidades
+## Funcionalidades
 
-- Sistema de autenticaciÃ³n (registro/inicio de sesiÃ³n)
+- Sistema de autenticacion (registro/inicio de sesion)
 - Agenda de citas online para clientes
-- Panel de administraciÃ³n para gestionar citas
-- Blog de artÃ­culos legales
-- PÃ¡gina de equipo con perfiles de abogados
-- DiseÃ±o responsivo y profesional
+- Panel de administracion para gestionar citas
+- Blog de articulos legales
+- Pagina de equipo con perfiles de abogados
+- Diseno responsivo y profesional
 
-## ðŸ“ Estructura
+## Estructura
 
-```
-â”œâ”€â”€ index.html          â†’ PÃ¡gina principal
-â”œâ”€â”€ login.html          â†’ Inicio de sesiÃ³n
-â”œâ”€â”€ register.html       â†’ Registro de usuarios
-â”œâ”€â”€ agendar.html        â†’ Agendar cita
-â”œâ”€â”€ mis-citas.html      â†’ Ver mis citas
-â”œâ”€â”€ admin.html          â†’ Panel de administraciÃ³n
-â”œâ”€â”€ equipo.html         â†’ Perfiles del equipo
-â”œâ”€â”€ blog.html           â†’ ArtÃ­culos
-â”œâ”€â”€ css/                â†’ Estilos
-â”œâ”€â”€ js/                 â†’ LÃ³gica del frontend
-â””â”€â”€ backend/            â†’ API REST (Node.js + Express)
-```
+index.html          - Pagina principal
+login.html          - Inicio de sesion
+register.html       - Registro de usuarios
+agendar.html        - Agendar cita
+mis-citas.html      - Ver mis citas
+admin.html          - Panel de administracion
+equipo.html         - Perfiles del equipo
+blog.html           - Articulos
+css/                - Estilos
+js/                 - Logica del frontend
+backend/            - API REST (Node.js + Express)
 
-## ðŸ› ï¸ CÃ³mo ejecutar
+## Como ejecutar
 
 ```bash
 # 1. Backend
@@ -50,6 +48,6 @@ npm start
 # index.html o desplegar en Vercel
 ```
 
-## ðŸ”— Enlace
+## Enlace
 
-**Sitio en vivo:** [vilches-abogados.vercel.app](https://vilches-abogados.vercel.app)
+**Sitio en vivo:** https://vilches-abogados.vercel.app
